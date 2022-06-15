@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li a {
+  text-decoration: none;
+}
+div img {
+  display: block;
+  width: 100%;
+}
+.flex-container {
+  display: flex;
+  max-width: 992px;
+  margin: auto;
+  width: 100%;
+  min-width: 320px;
+  padding: 10px 15px;
+}
+header {
+  background-color: #19202c;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  color: antiquewhite;
+}
+header .list-items {
+  display: flex;
+  max-width: 260px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-items li a {
+  color: antiquewhite;
+}
+header .menu {
+  justify-content: space-between;
+  align-items: center;
+}
+.apresentacao {
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+}
+.apresentacao .texto-apresentacao {
+  min-height: 200px;
+}
+
+.texto-apresentacao h1 {
+  display: flex;
+  flex-direction: column;
+  color: #2b2b2c;
+  font-size: 48px;
+  margin-left: 20px;
+  align-items: center;
+}
+.texto-apresentacao a {
+  max-width: 180px;
+  max-height: 45px;
+  display: block;
+  background-color: #4e7bc9;
+  color: aliceblue;
+  text-align: center;
+  border-radius: 30px;
+  border: 2px solid black;
+  text-decoration: none;
+  line-height: 50px;
+  font-family: cursive;
+  align-items: center;
+  margin-left: 50px;
+}
+/* Hover do botão  Flex Turismo*/
+.texto-apresentacao a:hover {
+  font-size: larger;
+}
+.item-plano a {
+  display: flex;
+  flex-direction: column;
+  max-width: 180px;
+  max-height: 45px;
+  background-color: #4e7bc9;
+  color: aliceblue;
+  text-align: center;
+  border-radius: 30px;
+  border: 2px solid rgb(240, 234, 234);
+  text-decoration: none;
+  line-height: 50px;
+  font-family: cursive;
+  align-items: center;
+  margin: 30px;
+}
+/* Hover do dos botões do Planos */
+.item-plano a:hover{
+  font-size: larger;
+  justify-content: center;
+}
+/* Hover do dos botões de serviços */
+.item-servico a:hover {
+  font-size: larger;
+}
+/* Hover do botão de Flex Turismo*/
+.texto-apresentacao a:hover {
+  font-size: 20px;
+  color: aliceblue;
+}
+.texto-apresentacao p {
+  margin: 25px;
+  font-size: 20px;
+}
+.texto-apresentacao img {
+  width: 150px;
+  height: 200px;
+}
+#quem-somos {
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+#quem-somos h2 {
+  font-size: 32px;
+  color: #122a57;
+  display: flex;
+}
+#quem-somos h2::before {
+  content: "";
+  height: 45px;
+  margin-right: 7px;
+  width: 5px;
+  margin-bottom: 10px;
+  background-color: #122a57;
+  position: relative;
+}
+#quem-somos img {
+  margin: auto;
+  min-width: 420px;
+  margin-right: 15px;
+}
+.container-externo {
+  display: flex;
+  justify-content: space-between;
+  background-color: #19202c;
+  width: 100%;
+  padding: 10px;
+}
+#servicos {
+  flex-direction: column;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+#servicos h2 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  color: aliceblue;
+  font-size: 32px;
+  align-items: center;
+}
+.lista-de-servicos {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.item-servico {
+  text-align: center;
+}
+.item-servico a {
+  width: 220;
+  height: 50px;
+  background-color: #4e7bc9;
+  color: aliceblue;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+}
+.item-servico p {
+  color: aliceblue;
+  margin: 15px 15px;
+  font-weight: 700px;
+  font-size: 20px;
+}
+.item-servico img {
+  width: 80%;
+  margin: auto;
+}
+#planos {
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+#planos h2 {
+  font-size: 32px;
+}
+.list-planos {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.item-plano {
+  flex: 1;
+  border: 3px solid rgb(231, 226, 226);
+  background-color: #19202c;
+  max-width: 240px;
+}
+
+.item-plano h3 {
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+  align-items: center;
+  margin-top: 20px;
+}
+.item-plano h3::after {
+  content: "";
+  background-color: aliceblue;
+  width: 100%;
+  height: 3px;
+  margin: 20px;
+}
+.item-plano ul {
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+  padding: 10px 15px;
+}
+.item-plano ul li {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.item-plano ul li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: azure;
+  margin-right: 15px;
+}
+footer {
+  display: flex;
+  background-color: #19202c;
+  height: 70px;
+  justify-content: center;
+}
+footer .footer {
+  justify-content: space-between;
+  align-items: center;
+  color: aliceblue;
+}
+/*  Responsividade */
+/*  Mobile*/
+@media (max-width: 992px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .apresentacao {
+    flex-direction: column-reverse;
+  }
+  .apresentacao .texto-apresentacao {
+    width: 100%;
+  }
+  .texto-apresentacao {
+    display: block;
+  }
+  #quem-somos {
+    flex-direction: column-reverse;
+    margin-top: 30px;
+  }
+  #quem-somos img {
+    min-width: 320px;
+    margin: auto;
+  }
+  .lista-de-servicos {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .item-servico img {
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  #planos h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .list-planos {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .list-planos .item-plano {
+    max-width: 90%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .item-servico a {
+    width: 150;
+    height: 35px;
+    background-color: #4e7bc9;
+    color: aliceblue;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+  }
+  .item-plano a{
+    margin-left: 55px;
+  }
+  
+  .btn {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 150px;
+    height: 30px;
+  }
+  .container .apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .apresentacao {
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .texto-apresentacao h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 80px;
+  }
+  .item-servico a:hover {
+    font-size: larger;
+  }
+}
